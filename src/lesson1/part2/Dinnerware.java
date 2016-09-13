@@ -1,3 +1,4 @@
+package lesson1.part2;
 
 public class Dinnerware {
 	private String material;
