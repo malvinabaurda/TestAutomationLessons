@@ -21,7 +21,7 @@ public class Dinnerware {
 	public String getNameOfOwner() {
 		return nameOfOwner;
 	}
-
+//This is comment for the main method
 	public static void main(String[] args) {
 		// Creation of class instances
 		Dinnerware malvinaDinnerware = new Dinnerware();
