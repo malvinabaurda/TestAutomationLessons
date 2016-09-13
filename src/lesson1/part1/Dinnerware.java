@@ -7,6 +7,7 @@ public class Dinnerware {
 	private int yearOfProduction;
 	private String nameOfOwner;
 
+	
 	public void setMaterial(String newMaterial) {
 		material = newMaterial;
 	}
