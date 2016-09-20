@@ -1,6 +1,6 @@
 package lesson1classextensions;
 
-public class Human {
+public abstract class Human {
 	protected String name;
 	protected String surname;
 	private int age;
