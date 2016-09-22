@@ -2,8 +2,8 @@ package lesson1classextensions2;
 
 public abstract class Human {
 	protected String name;
-	private String surname;
-	private int age;
+	protected String surname;
+	protected int age;
 	private String sex;
 	public String getName() {
 		return name;

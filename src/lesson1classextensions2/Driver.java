@@ -2,7 +2,17 @@ package lesson1classextensions2;
 
 public class Driver extends Human {
 	private int drivingExperiance;
-	private String car;
+	private Car carType;
+
+	public Driver(String name, String surname, int age) {
+		this.name=name;
+		this.surname=surname;
+		this.age=age;
+	}
+
+	public Driver() {
+		
+	}
 
 	public int getDrivingExperiance() {
 		return drivingExperiance;
@@ -12,12 +22,12 @@ public class Driver extends Human {
 		this.drivingExperiance = drivingExperiance;
 	}
 
-	public String getCar() {
-		return car;
+	public Car getCarType() {
+		return carType;
 	}
 
-	public void setCar(String car) {
-		this.car = car;
+	public void setCarType(Car carType) {
+		this.carType = carType;
 	}
 
 }

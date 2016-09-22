@@ -1,9 +1,14 @@
 package lesson1classextensions2;
 
 public class Car {
-	private String brand;
+	public String brand;
 	private String model;
 	private String color;
+
+	public Car(String model, String color) {
+		this.model=model;
+		this.color=color;
+	}
 
 	public String getBrand() {
 		return brand;
@@ -25,8 +30,10 @@ public class Car {
 		return color;
 	}
 
-	public void setColor(String color) {
+	public void setColor(String color){
 		this.color = color;
 	}
 
+	
+	
 }
