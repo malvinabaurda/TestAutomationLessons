@@ -27,7 +27,6 @@ public class Race {
 		driverOne.setDrivingExperiance(8);
 		driverTwo.setDrivingExperiance(9);
 		driverThree.setDrivingExperiance(5);
-		System.out.println(driverOne.getCarType());
 		System.out.println(driverOne.getCarType().getModel() + " " + driverOne.getCarType().getColor());
 		System.out.println(driverTwo.getName() + " " + driverTwo.getSurname() + " " + driverTwo.getAge() + " "
 				+ driverTwo.getCarType().getBrand() + " " + driverTwo.getCarType().getModel() + " "
