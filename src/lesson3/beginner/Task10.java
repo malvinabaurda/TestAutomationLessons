@@ -8,10 +8,11 @@ public class Task10 {
 	}
 
 	private void print(int value) {
-		for (int i = 1; i <= value; i++){
-			for (int j = 1; j <= value; j++){
-				System.out.print("*");}
-		System.out.println();
+		for (int i = 1; i <= value; i++) {
+			for (int j = 1; j <= value; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
 	}
-}
 }
