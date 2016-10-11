@@ -10,7 +10,7 @@ System.out.println(myString.substring(0, 1));
 
 	public static void main(String[] args) {
 		Task2 myInstance = new Task2();
-		myInstance.swapChar("This is the only text in theHHgggg  kk");
+		myInstance.swapChar("This is real");
 	}
 
 }
