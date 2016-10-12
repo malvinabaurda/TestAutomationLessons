@@ -1,5 +1,13 @@
 
 package lesson3.preintermediate;
+/*
+
+0,1,1, 2,3,5,8,13,21,34,55
+
+3-2
+6-4
+x-100
+*/
 
 public class Task8 {
 
