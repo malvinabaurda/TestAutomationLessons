@@ -13,22 +13,24 @@ public class Task8 {
 
 	public static void main(String[] args) {
 		Task8 myInstance = new Task8();
-		int [] array = null;
-		myInstance.showSum(100, array);
-		
+		System.out.println(myInstance.showSum(100));
+
 	}
 
-	private void showSum(int value, int[] array) {
-		array [0]  = 1;
-		array [1] = 1;
+	private int showSum(int value) {
+		int k = 2;
+		int a = 1;
+		int b = 1;
+		int s = 2;
 		int sum = 0;
-		for(int i = 2; i<value*2; i++){
-			array[i]=array[i-1]+array[i-2];
-					sum = sum + array[i];
-		for(int j = 1; j>0; j=j+2);
-		System.out.println(sum);
-			
-		
-	}
+		while (s < value) {
+			s = a + b;
+			a = b;
+			b = s;
+			if (s % 2 == 0)
+				k++;
+		}
+		return sum;
 
+	}
 }
