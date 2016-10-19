@@ -1,5 +1,5 @@
 package lesson3.preintermediate;
-
+/*Write a method for calculating quadratic equation. It takes a, b, c numbers and print the solution*/
 import static java.lang.Math.*;
 
 public class Task13 {
@@ -10,7 +10,7 @@ public class Task13 {
 
 	}
 
-	private void calculateQuadraticEquation(int a, int b, int c) {
+	public void calculateQuadraticEquation(int a, int b, int c) {
 		double d = pow(b, 2) - 4 * a * c;
 		if (d > 0) {
 			System.out.println("x1 = " + (-b - sqrt(d)) / (2 * a));

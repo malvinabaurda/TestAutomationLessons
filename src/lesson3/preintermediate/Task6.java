@@ -1,30 +1,39 @@
 package lesson3.preintermediate;
 
-public class Task6 {
+/*Given an array of integers. Write a method which calculates sum of all elements and arithmetic
 
-	public static void main(String[] args) {
-		Task6 myInstance = new Task6();
-		int[] array = { 1, 2, 7, 0, 0, 0, 0, 0, 0 };
-		myInstance.calculateSum(array);
-		myInstance.calculateArithmeticAverage(array);
+average of them*/
+public class Task6 {
+	public void showMyArray(int[] myArray) {
+		for (int x : myArray)
+			System.out.print(x + " ");
 	}
 
-	private void calculateSum(int[] array) {
+	public int calculateSum(int[] array) {
 		int sum = 0;
 		for (int i = 0; i < array.length; i++)
 			sum += array[i];
-		System.out.println(sum);
+		return sum;
 
 	}
 
-	private void calculateArithmeticAverage(int[] array) {
+	public double calculateArithmeticAverage(int[] array) {
 		double average = 0;
 		int sum = 0;
 		for (int i = 0; i < array.length; i++)
 			sum += array[i];
 		average = (double) sum / array.length;
-		System.out.println(average);
+		return average;
 
+	}
+
+	public static void main(String[] args) {
+		Task6 myInstance = new Task6();
+		int[] array = { 1, 2, 7, 0, 0, 0, 0, 0, 0,0 };
+		System.out.print("Array: ");
+		myInstance.showMyArray(array);
+		System.out.print("\nSum of all elements is " + myInstance.calculateSum(array));
+		System.out.print("\nArithmetic average of all elements is " + myInstance.calculateArithmeticAverage(array));
 	}
 
 }

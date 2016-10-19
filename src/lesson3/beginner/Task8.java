@@ -12,7 +12,7 @@ yourMethod("Testing", 3) → "TesTeT"
 yourMethod("Testing", 2) → "TeT“ 
  * */
 public class Task8 {
-	private String myMethod(String value, int i) {
+	public String myMethod(String value, int i) {
 		String result = "";
 		for (; i > 0; i--)
 			result = result + value.substring(0, i);

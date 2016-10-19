@@ -3,7 +3,7 @@ package lesson3.beginner;
 //Given an array of integers. Find and print the max element in it.
 public class Task7 {
 
-	private int showMax(int[] array) {
+	public int showMax(int[] array) {
 		int maxValue = array[0];
 		for (int i = 1; i < array.length; i++)
 			if (array[i] > maxValue)

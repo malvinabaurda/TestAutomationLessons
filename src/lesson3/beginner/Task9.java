@@ -11,7 +11,7 @@ public class Task9 {
 
 	}
 
-	private float devide(int i, int j) {
+	public float devide(int i, int j) {
 		float quotient = i /(float)j;
 		return quotient;
 
