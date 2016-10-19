@@ -6,8 +6,9 @@ public class Task13 {
 
 	public static void main(String[] args) {
 		Task13 myInstance = new Task13();
-		myInstance.calculateQuadraticEquation(1, 96, 4);
-
+		myInstance.calculateQuadraticEquation(1, 4, 4);
+		myInstance.calculateQuadraticEquation(1, 96, 5656);
+		myInstance.calculateQuadraticEquation(1, -5, 4);
 	}
 
 	public void calculateQuadraticEquation(int a, int b, int c) {
@@ -21,6 +22,6 @@ public class Task13 {
 			System.out.println("The equation has no solution.");
 
 		}
-
+System.out.println("---");
 	}
 }

@@ -2,31 +2,33 @@
 package lesson3.preintermediate;
 /*
 Write a method which calculates a sum of first 100 odd elements of Fibonacci sequence
+http://stackoverflow.com/questions/8965006/java-recursive-fibonacci-sequence
 */
 
 public class Task8 {
-	public long showSum(int value) {
-		int k = 2;
-		int a = 1;
-		int b = 1;
-		long sum = 2;
-		while (k < value) {
-			int s = a + b;
-			if (!(s % 2 == 0)) {
-				sum = sum + s;
-				k++;
-			}
-			a = b;
-			b = s;
-		}
-		return sum;
-
-	}
-
+	int size = 1475;
+	double [] fibonacci = new double [size];
+	
+    public double createFibonacciSequence (){
+    	
+    	double sum = 2;
+    	try {fibonacci[0] = 0;
+    	fibonacci[1] = 1;
+    	
+    	for( int i = 2; i<size; i++) {
+    		fibonacci[i]=fibonacci[i-1]+fibonacci[i-2];
+    		if (fibonacci[i]%2==0) 
+    			sum +=fibonacci[i];}
+		return sum;}
+    	catch (ArrayIndexOutOfBoundsException ex){
+    		System.out.println("This array is too small for me!");
+    		return 0;
+    	}
+    }
+	
 	public static void main(String[] args) {
 		Task8 myInstance = new Task8();
-		System.out.println("Sum of first 6 odd elements of Fibonacci sequence: " + myInstance.showSum(6));
-
+		System.out.println("Sum of first "+myInstance.size+" odd elements of Fibonacci sequence: " + myInstance.createFibonacciSequence());
 	}
 
 }

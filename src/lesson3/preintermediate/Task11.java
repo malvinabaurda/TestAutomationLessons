@@ -5,7 +5,12 @@ random. Write Java-program which returns True, if sequence {1, 2, 3} appears som
 
 array. Provide additional boundary checks*/
 public class Task11 {
+/*Given an array of integer positive numbers. For example, {4, 6, 0, 1, 2, 3, 1, 9}, but it can be any
 
+random. Write Java-program which returns True, if sequence {1, 2, 3} appears somewhere in the
+
+array. Provide additional boundary checks
+*/
 	public static void main(String[] args) {
 		Task11 myInstance = new Task11();
 		int[] myArray = { 4, 6, 0, 1, 2, 3, 1, 9 };

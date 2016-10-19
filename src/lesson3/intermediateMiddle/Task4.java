@@ -5,26 +5,26 @@ appearing in the string, ignoring all other characters. Provide all necessary ch
 
 yourMethod("krm236abw") → 11
 
-yourMethod("aa49b55") → 23*/
-
-
+yourMethod("aa49b55") → 23
+*/
 public class Task4 {
 
 	public static void main(String[] args) {
 		Task4 myInstance = new Task4();
-		System.out.println(myInstance.calculateDigits("12f3yyyyt45"));
+		System.out.print(myInstance.calculate("1v4h2g35v235h"));
+
 	}
 
-	public int calculateDigits(String value) {
+	public int calculate(String value) {
 		int sum = 0;
 		for (int i = 0; i < value.length(); i++) {
-			if (Character.isDigit(value.charAt(i)))
-				;
-			sum += Character.getNumericValue(value.charAt(i));
+			if (Character.isDigit(value.charAt(i))) {
+				sum += Character.getNumericValue(value.charAt(i));
+
 			}
 
-		
+			
+		}
 		return sum;
-
 	}
 }

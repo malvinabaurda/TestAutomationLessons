@@ -22,7 +22,7 @@ public class Task3 {
 			myArray[i] = myArray[myArray.length - 1 - i];
 			myArray[myArray.length - 1 -i] = buf;
 
-		} for( i = 0; i<myArray.length; i++)
+		} for( i = 0; i<myArray.length; ++i)
 		System.out.print(myArray[i]+" ");
 
 	} 

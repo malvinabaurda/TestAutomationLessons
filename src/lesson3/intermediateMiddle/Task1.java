@@ -21,7 +21,8 @@ public class Task1 {
 	public int calculate(String value) {
 		int sum = 0;
 		for (int i = 0; i < value.length(); i++) {
-			sum += Character.getNumericValue(value.charAt(i));
+			if ((int)value.charAt(i)>=48 && (int)value.charAt(i)<=57)
+				sum += Character.getNumericValue(value.charAt(i));
 		}
 		return sum;
 
