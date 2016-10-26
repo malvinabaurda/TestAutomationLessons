@@ -17,7 +17,7 @@ public class Task7 {
 			for (int j = 0; j < 3; j++) {
 				resultMatrix[i][j] = matrix1[i][j] + matrix2[i][j];
 				System.out.print(resultMatrix[i][j] + " ");
-			}
+			} System.out.println();
 		}
 	}
 }

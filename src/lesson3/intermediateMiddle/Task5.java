@@ -1,21 +1,26 @@
 package lesson3.intermediateMiddle;
-import java.util.Scanner;
-//Temperature converter from Kelvin to Celsius
-public class Task5 {
 
-	public static void main(String[] args) {
-		Task5 myInstance = new Task5();
-		Scanner in = new Scanner(System.in);
-		System.out.print("Температура по шкале Кельвина: ");
-		double kelvin = in.nextInt();
-		System.out.println("Температура по шкале Цельсия: " + myInstance.fromKelvinToCelsius(kelvin));
+//Temperature converter from Celsius to Kelvin
+public class Task5 {
+	public float fromCelsiusToKelvin(float celsius) {
+		float kelvin = celsius + (float) 273.15;
+		return kelvin;
 
 	}
 
-	private double fromKelvinToCelsius(double kelvin) {
-	double c = kelvin - 273.15;
-	return c; 
-		
+	public float fromKelvinToCelsius(float kelvin) {
+		float c = kelvin - (float) 273.15;
+		return c;
+
+	}
+
+	public static void main(String[] args) {
+		Task5 myInstance = new Task5();
+		System.out.println("1 градус по шкале Кельвина равен " + myInstance.fromKelvinToCelsius(1)
+				+ " градусов по шкале Цельсия");
+		System.out.println("1 градус по шкале Цельсия равен " + myInstance.fromCelsiusToKelvin(1)
+				+ " градусов по шкале Кельвина");
+
 	}
 
 }

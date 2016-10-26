@@ -5,13 +5,6 @@ Input: "checkChangingProfilePicture“
 Output: "Check changing profile picture"
 */
 public class Task8 {
-
-	public static void main(String[] args) {
-		Task8 myInstance = new Task8();
-		System.out.println(myInstance.returnBeautifulSentence("checkChangingProfilePicture"));
-
-	}
-
 	public String returnBeautifulSentence(String value) {
 		String myStr = Character.toString(Character.toUpperCase(value.charAt(0)));
 		for (int i = 1; i < value.length(); i++) {
@@ -23,6 +16,12 @@ public class Task8 {
 			}
 		}
 		return myStr;
+	}
+
+	public static void main(String[] args) {
+		Task8 myInstance = new Task8();
+		System.out.println(myInstance.returnBeautifulSentence("checkChangingProfilePicture"));
+
 	}
 
 }
