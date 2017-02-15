@@ -5,7 +5,7 @@ import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 
-public class GetParameterNameFromTextfile {
+public class GetValueName {
 	String fileName = "";
 
 	public String valueOfText(String fileName, String textName) {
@@ -37,7 +37,7 @@ public class GetParameterNameFromTextfile {
 
 	public static void main(String[] args) {
 
-		GetParameterNameFromTextfile myInstance = new GetParameterNameFromTextfile();
+		GetValueName myInstance = new GetValueName();
 		String textvalue1 = myInstance.valueOfText(
 				"C://Users//Мальвина//git//TestAutomationLessons//src//lesson4//sandbox//1",
 				"text1");
